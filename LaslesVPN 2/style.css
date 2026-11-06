@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.header img {
+  width: 13%;
+}
+.header .aLinks {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .aLinks a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #202020;
+}
+.header .aLinks a:hover {
+  color: #F53838;
+}
+.header .buttons {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .buttons button {
+  width: 47%;
+  height: 52px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: black;
+}
+.header .buttons button:last-of-type {
+  border: 1px solid #F53838;
+  border-radius: 25px;
+  color: #F53838;
+}
+.header .buttons button:hover {
+  color: #F53838;
+}
+.header .buttons button:last-of-type:hover {
+  background-color: #F53838;
+  color: white;
+}
+
+.first {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.first .second {
+  width: 40%;
+  height: 350px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.first .second h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+.first .second p {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #202020;
+}
+.first .second button {
+  width: 250px;
+  height: 60px;
+  background-color: #F53838;
+  border: none;
+  border-radius: 13px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.statistics {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statistics .statisticsContainer {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+}
+.statistics .statisticsContainer .statisticCard {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 1px solid rgb(223, 221, 221);
+}
+.statistics .statisticsContainer .statisticCard:nth-last-of-type(1) {
+  border: none;
+}
+.statistics .statisticsContainer .statisticCard .statisticIcon {
+  width: 65px;
+  height: 65px;
+  background-color: #F8D3D5;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statistics .statisticsContainer .statisticCard .statisticIcon i {
+  color: #F53838;
+  font-size: 25px;
+}
+.statistics .statisticsContainer .statisticCard .statisticInfo {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.statistics .statisticsContainer .statisticCard .statisticInfo h1 {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.statistics .statisticsContainer .statisticCard .statisticInfo h2 {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.featuresSection {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.featuresSection img {
+  width: 45%;
+}
+.featuresSection .featuresContent {
+  width: 40%;
+  height: 500px;
+}
+.featuresSection .featuresContent h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.featuresSection .featuresContent p {
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #202020;
+}
+.featuresSection .featuresContent .featuresList {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.featuresSection .featuresContent .featuresList .featuresItem {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.featuresSection .featuresContent .featuresList .featuresItem i {
+  color: #2FAB73;
+  margin-right: 12px;
+}
+.featuresSection .featuresContent .featuresList .featuresItem p {
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #202020;
+}
+
+.pricingHeader {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.pricingHeader h1 {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.pricingHeader p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 35px;
+}
+
+.pricingContent {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.pricingContent .pricingBox {
+  width: 25%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.pricingContent .pricingBox:hover {
+  width: 27%;
+  height: 620px;
+  transition: all 0.5s;
+}
+.pricingContent .pricingBox .plan {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.pricingContent .pricingBox .plan img {
+  width: 40%;
+}
+.pricingContent .pricingBox .plan h1 {
+  font-family: sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+.pricingContent .pricingBox .pricing i {
+  color: #2FAB73;
+  margin-right: 4px;
+}
+.pricingContent .pricingBox .pricing p {
+  margin-bottom: 8px;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+.pricingContent .pricingBox .btn {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.pricingContent .pricingBox .btn h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.pricingContent .pricingBox .btn button {
+  width: 50%;
+  height: 45px;
+  border: 2px solid #F53838;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #F53838;
+  background: none;
+  cursor: pointer;
+}
+.pricingContent .pricingBox .btn button:hover {
+  background-color: #F53838;
+  color: white;
+}
+
+.testimonialsSection {
+  width: 100%;
+  height: 800px;
+}
+.testimonialsSection .testimonialsHeader {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.testimonialsSection .testimonialsHeader h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.testimonialsSection .testimonialsHeader p {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #202020;
+}
+.testimonialsSection .testimonialsContainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard {
+  width: 30%;
+  height: 220px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 5px;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser img {
+  width: 50px;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialInfo h3 {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialInfo p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #3A3A3A;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialRating {
+  display: flex;
+  align-items: center;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialRating p {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-right: 5px;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialRating i {
+  color: #FEA250;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialText {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialText p {
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  line-height: 24px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #0B132A;
+}
+
+@media (max-width: 1024px) {
+  .header .aLinks a {
+    font-size: 16px;
+  }
+  .first img {
+    width: 50%;
+  }
+  .first .second h1 {
+    font-size: 40px;
+  }
+  .statistics .statisticsContainer .statisticCard {
+    width: 30%;
+  }
+  .featuresSection .featuresContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .featuresSection .featuresContent p {
+    font-size: 18px;
+  }
+  .pricingContent .pricingBox .pricing p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+.testimonialsSection .testimonialsContainer .testimonialsCard .testimonialText p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header .aLinks {
+    width: 40%;
+  }
+  .header .aLinks a {
+    font-size: 13px;
+  }
+  .header .buttons button {
+    height: 40px;
+    font-size: 14px;
+  }
+  .first img {
+    width: 45%;
+  }
+  .first .second {
+    height: 300px;
+  }
+  .first .second h1 {
+    font-size: 30px;
+  }
+  .first .second p {
+    font-size: 16px;
+  }
+  .first .second button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .statistics {
+    height: 250px;
+  }
+  .statistics .statisticsContainer {
+    height: 170px;
+  }
+  .statistics .statisticsContainer .statisticCard {
+    height: 75%;
+  }
+  .statistics .statisticsContainer .statisticCard .statisticIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .statistics .statisticsContainer .statisticCard .statisticIcon i {
+    font-size: 20px;
+  }
+  .statistics .statisticsContainer .statisticCard .statisticInfo h1 {
+    font-size: 20px;
+  }
+  .statistics .statisticsContainer .statisticCard .statisticInfo h2 {
+    font-size: 15px;
+  }
+  .featuresSection {
+    height: 650px;
+  }
+  .featuresSection img {
+    width: 40%;
+  }
+  .featuresSection .featuresContent {
+    height: 400px;
+  }
+  .featuresSection .featuresContent h1 {
+    font-size: 28px;
+  }
+  .featuresSection .featuresContent p {
+    font-size: 15px;
+  }
+  .featuresSection .featuresContent .featuresList {
+    height: 200px;
+  }
+  .featuresSection .featuresContent .featuresList .featuresItem i {
+    font-size: 10px;
+  }
+  .featuresSection .featuresContent .featuresList .featuresItem p {
+    font-size: 15px;
+  }
+  .pricingHeader {
+    height: 90px;
+  }
+  .pricingHeader h1 {
+    font-size: 28px;
+  }
+  .pricingHeader p {
+    font-size: 15px;
+  }
+  .pricingContent {
+    height: 700px;
+  }
+  .pricingContent .pricingBox {
+    height: 500px;
+  }
+  .pricingContent .pricingBox .plan {
+    height: 180px;
+  }
+  .pricingContent .pricingBox .plan img {
+    width: 38%;
+  }
+  .pricingContent .pricingBox .plan h1 {
+    font-size: 18px;
+  }
+  .pricingContent .pricingBox .pricing i {
+    font-size: 13px;
+  }
+  .pricingContent .pricingBox .pricing p {
+    font-size: 14px;
+  }
+  .pricingContent .pricingBox .btn {
+    height: 100px;
+  }
+  .pricingContent .pricingBox .btn h1 {
+    font-size: 18px;
+  }
+  .pricingContent .pricingBox .btn button {
+    width: 60%;
+    height: 38px;
+    font-size: 15px;
+  }
+  .testimonialsSection {
+    height: 700px;
+  }
+  .testimonialsSection .testimonialsHeader {
+    height: 150px;
+  }
+  .testimonialsSection .testimonialsHeader h1 {
+    font-size: 30px;
+  }
+  .testimonialsSection .testimonialsHeader p {
+    font-size: 15px;
+  }
+  .testimonialsSection .testimonialsContainer {
+    height: 300px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard {
+    height: 180px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser {
+    height: 85px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser img {
+    width: 35px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialInfo h3 {
+    font-size: 13px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialInfo p {
+    font-size: 12px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialRating p {
+    font-size: 13px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialsUser .testimonialRating i {
+    font-size: 10px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialText {
+    height: 80px;
+  }
+  .testimonialsSection .testimonialsContainer .testimonialsCard .testimonialText p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
